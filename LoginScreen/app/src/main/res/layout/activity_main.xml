@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BFA5"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="80dp"
+
+    tools:context="com.example.sandeep.loginscreen.MainActivity">
+
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="5dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="5dp"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailText"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingBottom="5dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="5dp"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/passwordText"
+        android:layout_marginTop="15dp"
+        android:text="@string/login"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/signupText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginBtn"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="@string/Signup"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+
+</RelativeLayout>
